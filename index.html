@@ -172,7 +172,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一-挂载"><a href="#一-挂载" class="headerlink" title="一.挂载"></a>一.挂载</h2><p>内容</p>
+        <h2 id="一-关于挂载"><a href="#一-关于挂载" class="headerlink" title="一.关于挂载"></a>一.关于挂载</h2><p>1.<br>  mkdir /iso<br>  cd /iso<br>  mount /dev/cdrom /iso<br>  cd /iso<br>  ls<br>2.搭建本地yum仓库<br>    vim /etc/yum.repos.d/local.repo<br>    [local]<br>    name=local<br>    baseurl=file:///iso<br>    gpgcheck=0<br>    enabled=1<br>  yum clean all<br>  cd /etc/yum/pluginconf.d<br>  vim subscription-manager.conf<br>    #enable=1 改为 enable=0<br>3.安装gcc软件包<br>  yum clean all<br>  yum makecache<br> yum install -y gcc</p>
 <hr>
 <h2 id="二-vsftp"><a href="#二-vsftp" class="headerlink" title="二.vsftp"></a>二.vsftp</h2><p>内容</p>
 <hr>
